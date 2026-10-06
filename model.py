@@ -95,8 +95,32 @@ def trainable_fraction(trainable_count, total_count):
     # TODO: return the fraction of parameters that are trainable.
     return float(trainable_count/ total_count)
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    """Return a small list of {'instruction', 'response'} dicts for SFT."""
+
+    return [
+        {
+            "instruction": "What is Python?",
+            "response": "Python is a popular programming language known for its simple and readable syntax."
+        },
+        {
+            "instruction": "What is machine learning?",
+            "response": "Machine learning is a method where computers learn patterns from data to make predictions or decisions."
+        },
+        {
+            "instruction": "Explain a database in simple words.",
+            "response": "A database is an organized collection of data that can be stored, searched, and updated efficiently."
+        },
+        {
+            "instruction": "What is an API?",
+            "response": "An API is a way for different software applications to communicate and exchange data."
+        },
+        {
+            "instruction": "Give me a short tip for learning programming.",
+            "response": "Practice consistently by solving small problems and building projects instead of only watching tutorials."
+        }
+    ]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
